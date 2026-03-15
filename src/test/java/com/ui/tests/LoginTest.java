@@ -6,6 +6,7 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ui.dataproviders.User;
 import com.ui.pages.HomePage;
 
 public class LoginTest {
@@ -25,9 +26,10 @@ public class LoginTest {
 		homePage = new HomePage(CHROME); //Because of static import, you can directly write CHROME
 	}
 
-	@Test (description = "verifies if the valid user is able to login to the application", groups = {"e2e", "sanity"})
-	public void loginTest() {
-		assertEquals(homePage.goToLoginPage().doLoginWith("wayopew108@flosek.com", "password").getUserName()
+	@Test (description = "verifies if the valid user is able to login to the application", groups = {"e2e", "sanity"}, 
+			dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
+	public void loginTest(User user) {
+		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName()
 				, "Skill Up");
 	}
 }

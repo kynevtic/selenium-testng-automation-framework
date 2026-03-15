@@ -2,6 +2,7 @@ package com.ui.pages;
 
 import static com.constants.Env.QA;
 import static com.utility.PropertiesUtility.readProperty;
+import static com.utility.JSONUtility.readJSON;
 
 import org.openqa.selenium.By;
 
@@ -14,7 +15,8 @@ public final class HomePage extends BrowserUtility {
 	
 	public HomePage(Browser browserName) {
 		super(browserName);
-		goToWebsite(readProperty(QA, "URL"));
+//		goToWebsite(readProperty(QA, "URL"));
+		goToWebsite(readJSON(QA).getUrl());
 	}
 
 	public LoginPage goToLoginPage() { // Page functions -----> Cannot return void
