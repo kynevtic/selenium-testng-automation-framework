@@ -1,0 +1,78 @@
+2026-03-16 17:09:07 [main] INFO com.ui.listeners.TestListener.onStart(TestListener.java:49) Test Suite Started...!!! 
+2026-03-16 17:09:08 [main] INFO com.ui.tests.LoginTest.setup(LoginTest.java:31) Load the home page of the website 
+2026-03-16 17:09:08 [main] INFO com.utility.BrowserUtility.<init>(BrowserUtility.java:28) Launching CHROME browser 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.goToWebsite(BrowserUtility.java:62) Visiting the website https://automationpractice.techwithjatin.com/ 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.maximizeWindow(BrowserUtility.java:68) Maximizing the browser window 
+2026-03-16 17:09:09 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:25) loginExcelTest 
+2026-03-16 17:09:09 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:26) verifies if the valid user is able to login to the application 
+2026-03-16 17:09:09 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:27) [e2e, sanity] 
+2026-03-16 17:09:09 [main] INFO com.ui.pages.HomePage.goToLoginPage(HomePage.java:25) Trying to perform click to go to sign in page 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.xpath: //a[contains(text(),'Sign in')] 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: email 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text wayopew108@flosek.com 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: passwd 
+2026-03-16 17:09:09 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text password 
+2026-03-16 17:09:10 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.id: SubmitLogin 
+2026-03-16 17:09:10 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:10 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:87) Finding the element with locator By.xpath: //a[@title='View my customer account']/span 
+2026-03-16 17:09:10 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:90) Element found and now returning text Skill Up 
+2026-03-16 17:09:10 [main] WARN com.ui.listeners.TestListener.onTestSkipped(TestListener.java:44) loginExcelTest SKIPPED 
+2026-03-16 17:09:10 [main] INFO com.ui.tests.LoginTest.setup(LoginTest.java:31) Load the home page of the website 
+2026-03-16 17:09:10 [main] INFO com.utility.BrowserUtility.<init>(BrowserUtility.java:28) Launching CHROME browser 
+2026-03-16 17:09:10 [main] INFO com.utility.BrowserUtility.goToWebsite(BrowserUtility.java:62) Visiting the website https://automationpractice.techwithjatin.com/ 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.maximizeWindow(BrowserUtility.java:68) Maximizing the browser window 
+2026-03-16 17:09:11 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:25) loginExcelTest 
+2026-03-16 17:09:11 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:26) verifies if the valid user is able to login to the application 
+2026-03-16 17:09:11 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:27) [e2e, sanity] 
+2026-03-16 17:09:11 [main] INFO com.ui.pages.HomePage.goToLoginPage(HomePage.java:25) Trying to perform click to go to sign in page 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.xpath: //a[contains(text(),'Sign in')] 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: email 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text wayopew108@flosek.com 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: passwd 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text password 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.id: SubmitLogin 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:87) Finding the element with locator By.xpath: //a[@title='View my customer account']/span 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:90) Element found and now returning text Skill Up 
+2026-03-16 17:09:11 [main] WARN com.ui.listeners.TestListener.onTestSkipped(TestListener.java:44) loginExcelTest SKIPPED 
+2026-03-16 17:09:11 [main] INFO com.ui.tests.LoginTest.setup(LoginTest.java:31) Load the home page of the website 
+2026-03-16 17:09:11 [main] INFO com.utility.BrowserUtility.<init>(BrowserUtility.java:28) Launching CHROME browser 
+2026-03-16 17:09:12 [main] INFO com.utility.BrowserUtility.goToWebsite(BrowserUtility.java:62) Visiting the website https://automationpractice.techwithjatin.com/ 
+2026-03-16 17:09:12 [main] INFO com.utility.BrowserUtility.maximizeWindow(BrowserUtility.java:68) Maximizing the browser window 
+2026-03-16 17:09:12 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:25) loginExcelTest 
+2026-03-16 17:09:12 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:26) verifies if the valid user is able to login to the application 
+2026-03-16 17:09:12 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:27) [e2e, sanity] 
+2026-03-16 17:09:12 [main] INFO com.ui.pages.HomePage.goToLoginPage(HomePage.java:25) Trying to perform click to go to sign in page 
+2026-03-16 17:09:12 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.xpath: //a[contains(text(),'Sign in')] 
+2026-03-16 17:09:12 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: email 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text wayopew108@flosek.com 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: passwd 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text password 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.id: SubmitLogin 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:87) Finding the element with locator By.xpath: //a[@title='View my customer account']/span 
+2026-03-16 17:09:13 [main] WARN com.ui.listeners.TestListener.onTestSkipped(TestListener.java:44) loginExcelTest SKIPPED 
+2026-03-16 17:09:13 [main] INFO com.ui.tests.LoginTest.setup(LoginTest.java:31) Load the home page of the website 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.<init>(BrowserUtility.java:28) Launching CHROME browser 
+2026-03-16 17:09:13 [main] INFO com.utility.BrowserUtility.goToWebsite(BrowserUtility.java:62) Visiting the website https://automationpractice.techwithjatin.com/ 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.maximizeWindow(BrowserUtility.java:68) Maximizing the browser window 
+2026-03-16 17:09:14 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:25) loginExcelTest 
+2026-03-16 17:09:14 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:26) verifies if the valid user is able to login to the application 
+2026-03-16 17:09:14 [main] INFO com.ui.listeners.TestListener.onTestStart(TestListener.java:27) [e2e, sanity] 
+2026-03-16 17:09:14 [main] INFO com.ui.pages.HomePage.goToLoginPage(HomePage.java:25) Trying to perform click to go to sign in page 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.xpath: //a[contains(text(),'Sign in')] 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: email 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text wayopew108@flosek.com 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:80) Finding the element with locator By.id: passwd 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.enterText(BrowserUtility.java:82) Element found and now entering text password 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:73) Finding the element with locator By.id: SubmitLogin 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.clickOn(BrowserUtility.java:75) Element found and now performing click 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:87) Finding the element with locator By.xpath: //a[@title='View my customer account']/span 
+2026-03-16 17:09:14 [main] INFO com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:90) Element found and now returning text Skill Up 
+2026-03-16 17:09:14 [main] ERROR com.ui.listeners.TestListener.onTestFailure(TestListener.java:38) loginExcelTest FAILED 
+2026-03-16 17:09:14 [main] ERROR com.ui.listeners.TestListener.onTestFailure(TestListener.java:39) expected [Skill Up1] but found [Skill Up] 
+2026-03-16 17:09:14 [main] INFO com.ui.listeners.TestListener.onFinish(TestListener.java:56) Test Suite Completed...!!! 
