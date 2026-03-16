@@ -10,11 +10,13 @@ import java.util.List;
 import org.testng.annotations.DataProvider;
 
 import com.google.gson.Gson;
+import com.utility.CSVReaderUtility;
+import com.utility.ExcelReaderUtility;
 
 public class LoginDataProvider {
 	
-	@DataProvider(name = "LoginTestDataProvider")
-	public Iterator<Object[]> loginDataProvider() {
+	@DataProvider(name = "LoginTestJSONDataProvider")
+	public Iterator<Object[]> loginJSONDataProvider() {
 		Gson gson = new Gson();
 		File file = new File(System.getProperty("user.dir") + "/test-data/logindata.json");
 		FileReader fileReader = null;
@@ -25,7 +27,7 @@ public class LoginDataProvider {
 			e.printStackTrace();
 		}
 		
-		TestData data = gson.fromJson(fileReader, TestData.class);
+		TestData data = gson.fromJson(fileReader, TestData.class); // De-serialization
 		
 		List<Object[]> dataToReturn = new ArrayList<Object[]>();
 		for (User user:data.getData()) {
@@ -33,5 +35,15 @@ public class LoginDataProvider {
 		}
 		
 		return dataToReturn.iterator();
+	}
+	
+	@DataProvider(name = "LoginTestCSVDataProvider")
+	public Iterator<User> loginCSVDataProvider() {
+		return CSVReaderUtility.readCSVFile("loginData.csv");
+	}
+	
+	@DataProvider(name = "LoginTestExcelDataProvider")
+	public Iterator<User> loginExcelDataProvider() {
+		return ExcelReaderUtility.readExcelFile("loginData.xlsx");
 	}
 }
