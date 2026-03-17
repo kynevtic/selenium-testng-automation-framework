@@ -13,8 +13,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.constants.Browser;
 
@@ -49,6 +52,51 @@ public abstract class BrowserUtility {
 		}
 	}
 	
+	public BrowserUtility(Browser browserName, boolean isHeadless) {
+		logger.info("Launching " + browserName + " browser");
+		if (browserName == Browser.CHROME) {
+			if (isHeadless) {
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("--disable-gpu");
+				options.addArguments("--window-size=1920,1080");
+				driver.set(new ChromeDriver(options));
+			}
+			else {
+				driver.set(new ChromeDriver());
+			}
+			
+		}
+		else if (browserName == Browser.EDGE) {
+			if (isHeadless) {
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("disable-gpu");
+				options.addArguments("--window-size=1920,1080");
+				driver.set(new EdgeDriver(options));
+			}
+			else {
+				driver.set(new EdgeDriver());
+			}
+		}
+		else if (browserName == Browser.FIREFOX) {
+			if (isHeadless) {
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("--width=1920");
+				options.addArguments("--height=1080");
+				driver.set(new FirefoxDriver(options));
+			}
+			else {
+				driver.set(new FirefoxDriver());
+			}
+		}
+		else {
+			logger.error("Invalid Browser Name...Please selecct [Chrome, Edge or Firefox]");
+			System.err.println("Invalid Browser Name...Please selecct [Chrome, Edge or Firefox]");
+		}
+	}
+	
 	public BrowserUtility(String browserName) {
 		logger.info("Launching " + browserName + " browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
@@ -59,6 +107,49 @@ public abstract class BrowserUtility {
 		}
 		else if (browserName.equalsIgnoreCase("firefox")) {
 			driver.set(new FirefoxDriver());
+		}
+		else {
+			logger.error("Invalid Browser Name...Please selecct [Chrome, Edge or Firefox]");
+			System.err.println("Invalid Browser Name...Please selecct [Chrome, Edge or Firefox]");
+		}
+	}
+	
+	public BrowserUtility(String browserName, boolean isHeadless) {
+		logger.info("Launching " + browserName + " browser");
+		if (browserName.equalsIgnoreCase("chrome")) {
+			if (isHeadless) {
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("--window-size=1920,1080");
+				driver.set(new ChromeDriver(options));
+			}
+			else {
+				driver.set(new ChromeDriver());
+			}
+			
+		}
+		else if (browserName.equalsIgnoreCase("edge")) {
+			if (isHeadless) {
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("disable-gpu");
+				driver.set(new EdgeDriver(options));
+			}
+			else {
+				driver.set(new EdgeDriver());
+			}
+		}
+		else if (browserName.equalsIgnoreCase("firefox")) {
+			if (isHeadless) {
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless=old");
+				options.addArguments("--width=1920");
+				options.addArguments("--height=1080");
+				driver.set(new FirefoxDriver(options));
+			}
+			else {
+				driver.set(new FirefoxDriver());
+			}
 		}
 		else {
 			logger.error("Invalid Browser Name...Please selecct [Chrome, Edge or Firefox]");
@@ -114,5 +205,10 @@ public abstract class BrowserUtility {
 		}
 		
 		return path;
+	}
+	
+	public void quit() {
+		logger.info("Quitting the browser");
+		driver.get().quit();
 	}
 }
