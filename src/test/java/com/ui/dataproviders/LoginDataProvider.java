@@ -39,11 +39,11 @@ public class LoginDataProvider {
 	
 	@DataProvider(name = "LoginTestCSVDataProvider")
 	public Iterator<User> loginCSVDataProvider() {
-		return CSVReaderUtility.readCSVFile("logindata.csv");
+		return CSVReaderUtility.readCSVFile("logindata.csv"); // Changed File Name
 	}
 	
 	@DataProvider(name = "LoginTestExcelDataProvider")
 	public Iterator<User> loginExcelDataProvider() {
-		return ExcelReaderUtility.readExcelFile("logindata.xlsx");
+		return ExcelReaderUtility.readExcelFile("logindata.xlsx"); // Changed File Name
 	}
 }
