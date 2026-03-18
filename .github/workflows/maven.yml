@@ -53,6 +53,7 @@ jobs:
       if: always()
       run: |
         mkdir -p public/extent-reports
+        mkdir -p screenshots
         cp -R report.html public/extent-reports/
         cp -R screenshots/ public/extent-reports/screenshots/
         ls -l
